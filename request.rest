@@ -1,0 +1,24 @@
+POST  http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+    "name":"ak",
+    "email":"anantha@gmail.com",
+    "password": "anantha"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+ 
+{
+    "email":"anantha@gmail.com",
+    "password":"anantha"
+}
+###
+GET http://localhost:5000/api/users
+Authorization: Bearer
+
+###
+GET http://localhost:5000/api/auth/refresh_token
+
